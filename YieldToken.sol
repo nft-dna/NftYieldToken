@@ -26,7 +26,7 @@ contract YieldTokenContract is ERC20, Ownable {
     constructor() ERC20("YieldTokenName", "YieldTokenSymbol") {
         StakeableTokensContract = address(0x ... ); // Nft Collection Contract
         StakeableTokensContractIsErc1155 = true;    // Collection is Erc1155 (or Erc721)
-        StakeableTokensCreator = address(0x ...);
+        StakeableTokensCreator = address(0x ...);   // Nft Collection Creator Address (needed only for additional check on Opensea storefront contract)
       }
     
     // extra check needed on Opensea collections
